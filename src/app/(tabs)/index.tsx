@@ -1,9 +1,9 @@
-
-import { Text, View } from 'react-native'
-import { Input } from '@/components/input/input'
-import { MenuButton } from '@/components/menuButton/menu-button'
-import { Avatar } from '@/components/avatar/avatar'
-import { Email } from '@/components/email/email'
+import { FlatList, Text, View } from 'react-native';
+import { Input } from '@/components/input/input';
+import { MenuButton } from '@/components/menuButton/menu-button';
+import { Avatar } from '@/components/avatar/avatar';
+import { Email } from '@/components/email/email';
+import { EMAILS } from '@/utils/email';
 
 export default function index() {
   return (
@@ -11,13 +11,18 @@ export default function index() {
       <Input>
         <MenuButton />
         <Input.Field placeholder="Pesquisar no e-mail" />
-        <Avatar 
-        source={{ uri: "https://github.com/LucasBlunTT.png"}} 
-        size="small"
+        <Avatar
+          source={{ uri: 'https://github.com/LucasBlunTT.png' }}
+          size="small"
         />
-      </Input>  
-
-      <Email />
+      </Input>
+      <FlatList
+        data={EMAILS}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={({ item }) => <Email data={item} />}
+        contentContainerClassName="gap-6"
+        ListHeaderComponent={() => <Text>Entrada</Text>}
+      />
     </View>
-  )
+  );
 }
