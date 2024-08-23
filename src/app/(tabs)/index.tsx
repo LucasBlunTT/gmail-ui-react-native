@@ -3,6 +3,7 @@ import { Text, View } from 'react-native'
 import { Input } from '@/components/input/input'
 import { MenuButton } from '@/components/menuButton/menu-button'
 import { Avatar } from '@/components/avatar/avatar'
+import { Email } from '@/components/email/email'
 
 export default function index() {
   return (
@@ -15,6 +16,8 @@ export default function index() {
         size="small"
         />
       </Input>  
+
+      <Email />
     </View>
   )
 }
