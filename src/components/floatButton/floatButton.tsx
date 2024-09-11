@@ -5,7 +5,7 @@ import { colors } from '@/styles/colors';
 
 export default function FloatButton() {
   return (
-    <TouchableOpacity className="px-8 py-4 bg-gray-600 rounded-full absolute bottom-4 right-4 gap-1 flex-row items-center">
+    <TouchableOpacity className="px-4 py-3 bg-gray-600 rounded-full absolute bottom-4 right-4 gap-1 flex-row items-center">
       <MaterialIcons name="edit" size={22} color={colors.orange[500]} />
       <Text className="text-orange-500 font-subtitle">Escrever</Text>
     </TouchableOpacity>
