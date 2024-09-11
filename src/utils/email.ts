@@ -32,4 +32,59 @@ export const EMAILS = [
     start: false,
     date: '22 de ago.',
   },
-];
+  {
+    id: 4,
+    name: 'Equipe de marketing',
+    avatar: 'https://mighty.tools/mockmind-api/content/human/43.jpg',
+    marker: '',
+    subject: 'Convite para webinar',
+    message:
+      'Participe do nosso webinar sobre novas tecnologias amanhã às 10h.',
+    start: false,
+    date: '22 de ago.',
+  },
+  {
+    id: 5,
+    name: 'Equipe de marketing',
+    avatar: 'https://mighty.tools/mockmind-api/content/human/43.jpg',
+    marker: '',
+    subject: 'Convite para webinar',
+    message:
+      'Participe do nosso webinar sobre novas tecnologias amanhã às 10h.',
+    start: false,
+    date: '22 de ago.',
+  },
+  {
+    id: 6,
+    name: 'Equipe de marketing',
+    avatar: 'https://mighty.tools/mockmind-api/content/human/43.jpg',
+    marker: '',
+    subject: 'Convite para webinar',
+    message:
+      'Participe do nosso webinar sobre novas tecnologias amanhã às 10h.',
+    start: false,
+    date: '22 de ago.',
+  },
+  {
+    id: 7,
+    name: 'Equipe de marketing',
+    avatar: 'https://mighty.tools/mockmind-api/content/human/43.jpg',
+    marker: '',
+    subject: 'Convite para webinar',
+    message:
+      'Participe do nosso webinar sobre novas tecnologias amanhã às 10h.',
+    start: false,
+    date: '22 de ago.',
+  },
+  {
+    id: 8,
+    name: 'Equipe de marketing',
+    avatar: 'https://mighty.tools/mockmind-api/content/human/43.jpg',
+    marker: '',
+    subject: 'Convite para webinar',
+    message:
+      'Participe do nosso webinar sobre novas tecnologias amanhã às 10h.',
+    start: false,
+    date: '22 de ago.',
+  },
+  ];

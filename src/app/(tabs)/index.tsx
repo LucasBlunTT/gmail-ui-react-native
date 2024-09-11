@@ -4,6 +4,7 @@ import { MenuButton } from '@/components/menuButton/menu-button';
 import { Avatar } from '@/components/avatar/avatar';
 import { Email } from '@/components/email/email';
 import { EMAILS } from '@/utils/email';
+import FloatButton from '@/components/floatButton/floatButton';
 
 export default function index() {
   return (
@@ -21,8 +22,13 @@ export default function index() {
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => <Email data={item} />}
         contentContainerClassName="gap-6"
-        ListHeaderComponent={() => <Text>Entrada</Text>}
+        ListHeaderComponent={() => (
+          <Text className="uppercase  text-gray-400 text-sm font-subtitle mt-6">
+            Entrada
+          </Text>
+        )}
       />
+      <FloatButton />
     </View>
   );
 }
